@@ -5,14 +5,13 @@ Esse desafio é parte do programa da trilha "Orquestração com Airflow".
 
 # Objetivos
 
-1. Criar uma task que le os dados da tabala 'Order' do banco de dados disponivel em ```data/Northwind_small.sqlite```. Sendo que o banco e um sqlite, essa taks deve escrever um arquivo chamado "output_orders.csv".
+1. Criar uma tarefa que lê os dados da tabela 'Order' do banco de dados disponível em ``data/Northwind_small.sqlite```. Sendo que o banco é um SQLite, esta tarefa deve escrever um arquivo chamado "output_orders.csv".
 
-2. Criar outra taks que le os dados da tabela 'OrderDetail' do mesmo banco, e fazer um ```join``` com o arquivo "output_orders.csv" exportado da task anterior. Essa task deve calcular qual a soma da quantidade vendida (Quantity) com destino (ShipCity) para o Rio de Janeiro.
+2. Criar outra tarefa que lê os dados da tabela 'OrderDetail' do mesmo banco e faz um ```join``` com o arquivo "output_orders.csv" exportado pela tarefa anterior. Esta tarefa deve calcular a soma da quantidade vendida (Quantity) com destino (ShipCity) para o Rio de Janeiro.
 
-3. Exportar essa contagem em arquivo "count.txt" que contenha somente esse valor em formato texto.
+3. Exportar essa contagem em um arquivo "count.txt" que contenha apenas esse valor em formato de texto.
 
-4. Criar uma ordenacao de execucao das tasks que a ultima taks precisa ser ```export_final_output```. 
-   
+4. Criar uma ordem de execução das tarefas de modo que a última tarefa seja ```"export_final_output"```.
 
 # Instruções 
 
@@ -31,11 +30,11 @@ cd desafios_indicium_lh_airflow
 ```
 # 2. Instalar o Airflow
 
-Voce pode usar o proprio site offial do Airflow.
+Pode-se utilizar o proprio site offial do Airflow.
 
 Lembrando que o Airflow sera executado localmente, tenha ciencia que ira consumir recursos de seu computador.
 
-Para instalar o Airflow primeiro iremos criar um ambiente virtual e depois rodar o script abaixo. O arquivo install.sh, tem as intrucoes, basta executar.
+Para instalar o Airflow primeiro iremos criar um ambiente virtual e depois rodar o script abaixo. O arquivo install.sh, tem as intruções, basta executar.
 
 ```
 virtualenv venv -p python3
