@@ -92,11 +92,11 @@ export AIRFLOW_HOME=seu/caminho/completo/desafios_indicium_lh_airflow/airflow-da
 ```
 Mude o caminho antes de desafios_indicium....
 
-# 4. Dags
+# 5. Dags
 
 Voce ira encontrar uma repositorio com as dags, copie esta pasta para dentro da pasta ```airflow-data```
 
-# 5. Validando projeto
+# 6. Validando projeto
 
 Depois de executar todos os passos voce deve encontrar na pasta ```data``` dois arquivos, um chamado ```output_orders.csv``` e ```count.txt```.
 
