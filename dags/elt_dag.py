@@ -31,8 +31,8 @@ with DAG(
         ELT Diária do banco de dados de ecommerce Northwind,
         começando em 2022-02-07. 
     """ 
-    df_file = ('/home/willian/indicium/desafio5/airflow_tooltorial/data/Northwind_small.sqlite')
-    output_csv_file = ('/home/willian/indicium/desafio5/airflow_tooltorial/data/output_orders.csv')
+    df_file = ('/seu/caminho/completo/desafios_indicium_lh_airflow/data/Northwind_small.sqlite')
+    output_csv_file = ('/seu/caminho/completo/desafios_indicium_lh_airflow/data/output_orders.csv')
     
     # essa task conecta-se e extrai a tabela order do banco de dados e salva em um arquivo csv
 
@@ -58,7 +58,7 @@ with DAG(
         return rio_de_janeiro_quantity
     
     def export_count_to_file(rio_de_janeiro_quantity, ti):
-        with open('/home/willian/indicium/desafio5/airflow_tooltorial/data/count.txt', 'w') as file:
+        with open('/seu/caminho/completo/desafios_indicium_lh_airflow/data/count.txt', 'w') as file:
             file.write(str(rio_de_janeiro_quantity))
 
 
