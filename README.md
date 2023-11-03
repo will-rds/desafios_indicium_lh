@@ -45,9 +45,28 @@ A senha do Airflow e gerara automaticamente, procure nos logs a senha correspond
 
 Airflow iniciado basta abrir um navegador e acessar http://localhost:8080.
 
-#3. Limpando Dags de Exemplo
+No console pressione ctrl+c para encerrar o processo do Airflow, depois disso, pegue o caminho completo de onde o projeto esta e digite no terminal:
+```
+export AIRFLOW_HOME=/seu/caminho/completo/desafios_indicium_lh_airflow/airflow-data
 
-Para deixar a visualizacao mais limpa e criar a nossa dag basta acessar o arquivo airflow.cfg, trocando:
+```
+> Lembre-se de colocar o caminho correto
+
+# 3. Arrumando caminho na DAG
+Na pasta dags, voce vai encontrar um arquivo chamado elt_dag.py, vc precisa alterar 3 caminhos para melhor funcionalidade.
+Mude as linhas: 34,35 e 61, abaixo as linhas correspondentes:
+
+```
+df_file = ('/seu/caminho/completo/desafios_indicium_lh_airflow/data/Northwind_small.sqlite')
+output_csv_file = ('/seu/caminho/completo/desafios_indicium_lh_airflow/data/output_orders.csv')
+with open('/seu/caminho/completo/desafios_indicium_lh_airflow/data/count.txt', 'w') as file:
+ ```
+Mude o caminho antes de desafios_indicium....
+
+
+# 4. Limpando Dags de Exemplo
+
+Para deixar a visualizacao mais limpa e criar a nossa dag basta acessar o arquivo airflow.cfg que fica dentro da pasta airflow-data, trocando:
 ```
 load_examples = True
 ``` 
@@ -58,8 +77,9 @@ load_examples = True
 
 Depois disso, precisamos configurar o ambiente para dizer onde os arquivos de config do airflow irao ficar. Na janela do seu terminal
 ```
-export AIRFLOW_HOME=seu/caminho/completo/airflow-data
+export AIRFLOW_HOME=seu/caminho/completo/desafios_indicium_lh_airflow/airflow-data
 ```
+Mude o caminho antes de desafios_indicium....
 
 # 4. Dags
 
