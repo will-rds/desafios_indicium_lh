@@ -68,14 +68,7 @@ Voce ira encontrar uma repositorio com as dags, copie esta pasta para dentro da 
 # 5. Validando projeto
 
 
-## Instalação
 
-Instale my-project com npm
-
-```bash
-  npm install my-project
-  cd my-project
-```
     
 ## Licença
 
