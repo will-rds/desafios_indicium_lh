@@ -101,6 +101,8 @@ Voce ira encontrar uma repositorio com as dags, copie esta pasta para dentro da 
 Depois de executar todos os passos voce deve encontrar na pasta ```data``` dois arquivos, um chamado ```output_orders.csv``` e ```count.txt```.
 
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/willianrsantos/) 
+
     
 ## Licença
 
