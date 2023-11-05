@@ -5,7 +5,7 @@ Esse desafio é parte do programa da trilha "Orquestração com Airflow".
 
 # Objetivos
 
-1. Criar uma tarefa que lê os dados da tabela 'Order' do banco de dados disponível em ``data/Northwind_small.sqlite```. Sendo que o banco é um SQLite, esta tarefa deve escrever um arquivo chamado "output_orders.csv".
+1. Criar uma tarefa que lê os dados da tabela 'Order' do banco de dados disponível em ```data/Northwind_small.sqlite```. Sendo que o banco é um SQLite, esta tarefa deve escrever um arquivo chamado "output_orders.csv".
 
 2. Criar outra tarefa que lê os dados da tabela 'OrderDetail' do mesmo banco e faz um ```join``` com o arquivo "output_orders.csv" exportado pela tarefa anterior. Esta tarefa deve calcular a soma da quantidade vendida (Quantity) com destino (ShipCity) para o Rio de Janeiro.
 
