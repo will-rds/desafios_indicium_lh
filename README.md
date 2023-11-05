@@ -30,9 +30,9 @@ cd desafios_indicium_lh_airflow
 ```
 # 2. Instalar o Airflow
 
-Pode-se utilizar o proprio site offial do Airflow.
+Pode-se utilizar o próprio site offial do Airflow.
 
-Lembrando que o Airflow sera executado localmente, tenha ciencia que ira consumir recursos de seu computador.
+Lembrando que o Airflow será executado localmente, tenha ciência que irá consumir recursos de seu computador.
 
 Para instalar o Airflow primeiro iremos criar um ambiente virtual e depois rodar o script abaixo. O arquivo install.sh, tem as intruções, basta executar.
 
@@ -42,7 +42,7 @@ source venv/bin/activate
 bash install.sh
 ```
 
-Se tudo der certo em seu terminal ira aparecer a segunte mensage: 
+Se tudo der certo em seu terminal irá aparecer a segunte mensagem: 
 ```
 standalone | 
 standalone | Airflow is ready
@@ -63,7 +63,7 @@ export AIRFLOW_HOME=/seu/caminho/completo/desafios_indicium_lh_airflow/airflow-d
 > Lembre-se de colocar o caminho correto
 
 # 3. Arrumando caminho na DAG
-Na pasta dags, voce vai encontrar um arquivo chamado elt_dag.py, vc precisa alterar 3 caminhos para melhor funcionalidade.
+Na pasta dags, você vai encontrar um arquivo chamado elt_dag.py, você precisa alterar 3 caminhos para melhor funcionalidade.
 Mude as linhas: 34,35 e 61, abaixo as linhas correspondentes:
 
 ```
@@ -76,7 +76,7 @@ Mude o caminho antes de desafios_indicium....
 
 # 4. Limpando Dags de Exemplo
 
-Para deixar a visualizacao mais limpa e criar a nossa dag basta acessar o arquivo airflow.cfg que fica dentro da pasta airflow-data, trocando:
+Para deixar a visualização mais limpa e criar a nossa dag basta acessar o arquivo airflow.cfg que fica dentro da pasta airflow-data, trocando:
 ```
 load_examples = True
 ``` 
@@ -85,7 +85,7 @@ para
 load_examples = True
 ``` 
 
-Depois disso, precisamos configurar o ambiente para dizer onde os arquivos de config do airflow irao ficar. Na janela do seu terminal
+Depois disso, precisamos configurar o ambiente para dizer onde os arquivos de config do airflow irão ficar. Na janela do seu terminal:
 ```
 export AIRFLOW_HOME=seu/caminho/completo/desafios_indicium_lh_airflow/airflow-data
 ```
@@ -93,11 +93,11 @@ Mude o caminho antes de desafios_indicium....
 
 # 5. Dags
 
-Voce ira encontrar uma repositorio com as dags, copie esta pasta para dentro da pasta ```airflow-data```
+Voce irá encontrar uma repositório com as dags, copie esta pasta para dentro da pasta ```airflow-data```
 
 # 6. Validando projeto
 
-Depois de executar todos os passos voce deve encontrar na pasta ```data``` dois arquivos, um chamado ```output_orders.csv``` e ```count.txt```.
+Depois de executar todos os passos você deve encontrar na pasta ```data``` dois arquivos, um chamado ```output_orders.csv``` e ```count.txt```.
 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/willianrsantos/) 
